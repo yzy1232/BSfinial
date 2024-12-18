@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品展示 - 中药材商城</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>中药材商城</h1>
+        <nav>
+            <ul>
+                <li><a href="./shop.html">首页</a></li>
+                <li><a href="#products">商品展示</a></li>
+                <li><a href="./cart.html">购物车</a></li>
+                <li><a href="#support">客服支持</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="products">
+            <h2>商品展示</h2>
+            <div class="product">
+                <img src="ginseng.jpg" alt="人参">
+                <div class="product-details">
+                    <h3>人参</h3>
+                    <p>优质人参</p>
+                    <p>价格: ¥100</p>
+                    <button class="add-to-cart" data-product-id="1">加入购物车</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="lingzhi.jpg" alt="灵芝">
+                <div class="product-details">
+                    <h3>灵芝</h3>
+                    <p>高档灵芝</p>
+                    <p>价格: ¥200</p>
+                    <button class="add-to-cart" data-product-id="2">加入购物车</button>
+                </div>
+            </div>
+            <!-- 添加更多商品 -->
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 中药材商城</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
