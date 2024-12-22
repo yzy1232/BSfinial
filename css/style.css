@@ -467,3 +467,58 @@ footer #email {
     text-decoration: underline;
     color: #0056b3;
 }
+
+/* 用户评价样式 */
+#product-reviews {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#product-reviews ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#product-reviews li {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#product-reviews li p {
+    font-style: italic;
+}
+
+/* 相关产品样式 */
+#related-products {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#related-products ul {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+#related-products li {
+    width: calc(33.333% - 20px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#related-products img {
+    width: 100%;
+    height: auto;
+}
+
+#related-products p {
+    padding: 10px 0;
+    background-color: #fff;
+}
