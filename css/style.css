@@ -1,9 +1,19 @@
+/* 基础样式 */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Logo样式 */
 #logo {
     display: flex;
     align-items: center;
 }
+
 #logo img {
     margin-right: 10px;
+    max-width: 100px;
+    height: auto;
 }
 
 #sticky {
@@ -22,11 +32,6 @@ header {
     align-items: center;
     padding: 3px;
     background-color: #f8f8f8;
-}
-
-#logo img {
-    max-width: 100px;
-    height: auto;
 }
 
 .search-container {
@@ -174,67 +179,26 @@ nav ul ul li:hover {
     display: block;
 }
 
-#hot-products {
-    margin: 20px 0;
-}
-
-#hot-products h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-#hot-products .product {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-}
-
-#hot-products .product img {
-    width: 100px;
-    height: 100px;
-    margin-right: 20px;
-    border-radius: 5px;
-}
-
-#hot-products .product-details {
-    flex: 1;
-}
-
-#hot-products .product-details h3 {
-    font-size: 20px;
-    margin: 0 0 10px 0;
-}
-
-#hot-products .product-details p {
-    margin: 5px 0;
-}
-
-#hot-products .add-to-cart {
-    padding: 5px 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#hot-products .add-to-cart:hover {
-    background-color: #0056b3;
-}
-
+/* 产品公共样式 */
+#hot-products,
 #new-products {
     margin: 20px 0;
 }
 
+#hot-products img,
+#new-products img {
+    vertical-align: middle;
+}
+
+#hot-products h2,
 #new-products h2 {
     font-size: 24px;
     margin-bottom: 10px;
+    display: inline-block;
+    vertical-align: middle;
 }
 
+#hot-products .product,
 #new-products .product {
     display: flex;
     align-items: center;
@@ -245,27 +209,48 @@ nav ul ul li:hover {
     background-color: #f9f9f9;
 }
 
+#hot-products .product img,
 #new-products .product img {
     width: 100px;
     height: 100px;
     margin-right: 20px;
     border-radius: 5px;
+    vertical-align: middle;
 }
 
-#new-products .product-details {
+#hot-products > img,
+#new-products > img {
+    width: 30px;
+    height: 30px;
+}
+
+/* 产品详情公共样式 */
+.product-details {
     flex: 1;
 }
 
-#new-products .product-details h3 {
+.product-details h3 {
     font-size: 20px;
     margin: 0 0 10px 0;
 }
 
-#new-products .product-details p {
+.product-details p {
     margin: 5px 0;
 }
 
-#new-products .add-to-cart {
+.product-details a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.product-details a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+/* 按钮公共样式 */
+.add-to-cart,
+#checkout {
     padding: 5px 10px;
     background-color: #007bff;
     color: white;
@@ -274,7 +259,8 @@ nav ul ul li:hover {
     cursor: pointer;
 }
 
-#new-products .add-to-cart:hover {
+.add-to-cart:hover,
+#checkout:hover {
     background-color: #0056b3;
 }
 
@@ -313,12 +299,6 @@ nav ul ul li:hover {
     text-decoration: underline;
 }
 
-
-html, body {
-    margin: 0;
-    padding: 0;
-}
-
 footer {
     background-color: #333;
     color: white;
@@ -339,6 +319,14 @@ footer address {
 
 footer #email {
     margin: 10px 0;
+}
+
+#main-content {
+    display: flex;
+}
+
+#main-content-left {
+    width: 80%;
 }
 
 #main-content-right {
@@ -367,53 +355,6 @@ footer #email {
 
 #cart-summary p {
     margin: 10px 0;
-}
-
-#checkout {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#checkout:hover {
-    background-color: #0056b3;
-}
-
-#main-content {
-    display: flex;
-}
-
-#main-content-left {
-    width: 80%;
-}
-
-#main-content-right {
-    width: 20%;
-}
-
-#hot-products img,
-#new-products img {
-    vertical-align: middle;
-    margin-right: 10px;
-}
-
-#hot-products h2,
-#new-products h2 {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-#new-products > img {
-    width: 30px;
-    height: 30px;
-}
-
-#hot-products > img {
-    width: 30px;
-    height: 30px;
 }
 
 #top-banner {
@@ -454,16 +395,6 @@ footer #email {
 
 #product-detail .add-to-cart:hover {
     background-color: #0056b3;
-}
-
-.product-details a {
-    text-decoration: none;
-    color: #000000;
-}
-
-.product-details a:hover {
-    text-decoration: underline;
-    color: #0056b3;
 }
 
 /* 用户评价样式 */

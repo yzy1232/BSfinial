@@ -10,15 +10,38 @@
 <body>
     <div id="sticky">
         <h1 id="top-banner"><img src="images/banner.webp" alt=""></h1>
+        <header>
+            <div id="logo">
+                <img src="./images/logo.png" alt="中药材商城">
+                <h3>欢迎来到中药材商城</h3>
+            </div>
+            
+            <div class="search-container">
+                <input type="text" placeholder="搜索...">
+                <button type="submit">搜索</button>
+            </div>
+            
+            <div class="cart-icon">
+                <a href="./cart.html">
+                    <img src="./images/cart-shopping-solid.svg" alt="购物车">
+                </a>
+            </div>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">首页</a></li>
+                <li><a href="#products">商品展示</a>
+                    <ul>
+                        <li><a href="#hot-products">热门商品</a></li>
+                        <li><a href="#new-products">最新商品</a></li>
+                    </ul>
+                </li>
+                <li><a href="./cart.html">购物车</a></li>
+                <li><a href="#support">客服支持</a></li>
+            </ul>
+        </nav>
     </div>
-    <nav>
-        <ul>
-            <li><a href="index.html">首页</a></li>
-            <li><a href="#products">商品展示</a></li>
-            <li><a href="./cart.html">购物车</a></li>
-            <li><a href="#support">客服支持</a></li>
-        </ul>
-    </nav>
     <main>
         <section id="cart">
             <h2>购物车</h2>
