@@ -451,3 +451,14 @@ footer #email {
     padding: 10px 0;
     background-color: #fff;
 }
+
+#details,
+#price,
+#deliver,
+#classify,
+#number {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+}
